@@ -1,0 +1,210 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: #000;
+    color: #eee;
+}
+
+/* NAVIGATION */
+nav {
+    background: #111;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: #FFD700;
+    margin: 0 40px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: yellowgreen;
+}
+
+/* HOME PAGE */
+.home {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.home h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #FFD700;
+}
+
+.home p {
+    font-size: 1.1rem;
+    color: #9b59b6;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* PROFILE PAGE */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.profile-container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid #FFD700;
+}
+
+.profile-info {
+    max-width: 400px;
+    text-align: left;
+}
+
+.profile-info h2 {
+    margin-bottom: 10px;
+    color: #FFD700;
+}
+
+.profile-info ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+.profile p{
+    font-size: 1.1rem;
+    color: #9b59b6;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+/* PROFILE LIST */
+ul.center {
+    list-style: none;        
+    padding: 0;              
+    margin: 20px auto;       
+    text-align: center;      
+}
+
+ul.center li {
+    color: purple;
+    margin: 8px 0;           
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* PROJECTS PAGE */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.projects img {
+    width: 280px;
+    margin: 15px;
+    border-radius: 10px;
+    border: 2px solid #FFD700;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.projects img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4);
+}
+
+/* CONTACT PAGE */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #FFD700;
+}
+
+p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    margin: 30px auto;
+    background: #111;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #FFD700;
+}
+
+form input,
+form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+form button {
+    padding: 12px;
+    border: none;
+    background: #FFD700;
+    color: #111;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: yellowgreen;
+    color: #fff;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 600px) {
+    nav a {
+        margin: 0 15px;
+        display: inline-block;
+    }
+
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .projects img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    .home h1 {
+        font-size: 2rem;
+    }
+}
