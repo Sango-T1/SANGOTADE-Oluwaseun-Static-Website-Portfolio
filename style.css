@@ -18,6 +18,12 @@ body {
     color: #333;
     background-color: #000;
 }
+html, body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
 
 /* NAVIGATION */
 nav {
@@ -316,7 +322,7 @@ body.contact {
 /* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
     nav a {
-        margin: 0 15px;
+        margin: 10px;
         display: inline-block;
         font-size: 0.9rem;
     }
@@ -324,6 +330,9 @@ body.contact {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    height: auto;
+    padding: 10px;
+    line-height: normal;
 }
 .home h1 {
     font-size: 2.5rem; 
@@ -352,7 +361,7 @@ body.contact {
     }
 
     form {
-        width: 90%;
+        width: 95%;
     }
 
     .home h1 {
@@ -367,6 +376,23 @@ body.contact {
 img {
     max-width: 100%;
     height: auto;
+    display: block;
+}
+h1, h2 {
+    font-size: 2rem; 
+    text-align: center;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 0 10px;   
+}
+body.home,
+body.profile,
+body.projects,
+body.contact {
+    padding-top: 100px;
 }
 
 }
