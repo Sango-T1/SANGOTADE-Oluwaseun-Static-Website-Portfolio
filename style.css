@@ -108,9 +108,9 @@ nav a:hover {
 }
 .portfolio-img img{
     width: 100%;
-    border-radius: 40%;
-    border: 8px solid purple;
-    box-shadow: 0 10px 30px violet ;
+    border-radius: 11%;
+    border: 8px solid #aa00ff;
+    box-shadow: 0 10px 30px purple ;
 }
 .portfolio-text{
     flex:1 ;
@@ -204,7 +204,7 @@ color: white;
 }
 .profile p{
     font-size: 1.1rem;
-    color: #9b59b6;
+    color: #FFD700;
     max-width: 700px;
     margin: 0 auto;
     line-height: 1.6;
@@ -240,13 +240,13 @@ ul.center li {
     width: 280px;
     margin: 15px;
     border-radius: 10px;
-    border: 2px solid #FFD700;
+    border: 2px solid #aa00ff;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
 .projects img:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4);
+    box-shadow: 0 8px 20px rgba(213, 77, 240, 0.4);
 }
 
 
@@ -254,7 +254,7 @@ ul.center li {
 h1 {
     text-align: center;
     margin: 100px ;
-    color: #FFD700;
+    color: #aa00ff;
 }
 
 p {
@@ -270,7 +270,7 @@ form {
     background: #111;
     padding: 20px;
     border-radius: 8px;
-    border: 1px solid #FFD700;
+    border: 1px solid #aa00ff;
 }
 
 form input,
@@ -290,7 +290,7 @@ form textarea {
 form button {
     padding: 12px;
     border: none;
-    background: #FFD700;
+    background: #aa00ff;
     color: #111;
     font-weight: bold;
     cursor: pointer;
@@ -298,7 +298,7 @@ form button {
 }
 
 form button:hover {
-    background: yellowgreen;
+    background: #FFD700;
     color: #fff;
 }
 body.home,
@@ -308,6 +308,11 @@ body.contact {
     padding-top: 100px;
 }
 
+.yellow-heading {
+    color: #FFD700;   
+    text-align: center;
+    margin-top: 100px;
+}
 /* RESPONSIVE DESIGN */
 @media (max-width: 600px) {
     nav a {
