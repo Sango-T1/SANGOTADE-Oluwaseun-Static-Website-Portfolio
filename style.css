@@ -18,12 +18,6 @@ body {
     color: #333;
     background-color: #000;
 }
-html, body {
-    width: 100%;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-}
 
 /* NAVIGATION */
 nav {
@@ -394,5 +388,10 @@ body.projects,
 body.contact {
     padding-top: 100px;
 }
-
+html, body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
 }
