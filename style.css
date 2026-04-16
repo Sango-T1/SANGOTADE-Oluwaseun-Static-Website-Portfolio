@@ -314,10 +314,28 @@ body.contact {
     margin-top: 100px;
 }
 /* RESPONSIVE DESIGN */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     nav a {
         margin: 0 15px;
         display: inline-block;
+        font-size: 0.9rem;
+    }
+    nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+    .portfolio-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .portfolio-img {
+        max-width: 250px;
+    }
+
+    .portfolio-text h1 {
+        font-size: 2rem;
     }
 
     .profile-container {
@@ -337,4 +355,15 @@ body.contact {
     .home h1 {
         font-size: 2rem;
     }
+    .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 8px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 }
